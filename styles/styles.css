@@ -39,27 +39,32 @@ a {
 
 .navbar-list {
     display: flex;
-    gap: 65px;
+    gap: 20px;
     font-size: 2.2vh;
     padding-left: 0;
 }
 
 .navbar-list a {
-    padding: 0.5rem 1.5rem;
-    border-radius: 999px;
-    font-size: 1.05rem;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    font-size: 2.2vh;
     font-weight: 500;
     color: black;
     transition: all 0.2 ease-in-out;
 }
 
 .navbar-list li:hover a {
-    background-color: #425c77;
+    background-color: black;
     color: white;
 }
 
 #home {
     z-index: 1;
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    align-items: center;
 }
 
 .sosmed-list {
@@ -70,5 +75,25 @@ a {
 
 .home-container {
     display: flex;
-    flex-direction: column;
+    flex: 1;
+    align-items: center;
+}
+
+.home-description {
+    flex: 1 1;
+}
+
+.content-description {
+    flex: 1 1;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+    }
+
+    .navbar-container .navbar-list ul {
+        flex-wrap: wrap;
+        column-gap: 0.5rem;
+    }
 }
