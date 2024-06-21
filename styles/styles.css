@@ -76,26 +76,32 @@ a {
 .home-container {
     display: flex;
     flex: 1;
-    align-items: center;
-}
-
-.home-description {
-    flex: 1 1;
     flex-direction: column;
 }
 
-.content-description {
-    flex: 1 1;
+.main-text {
+    font-size: 30px;
+}
+
+.second-text {
+    font-size: 20px;
 }
 
 .home-image {
     border-radius: 999px;
-    width: fit-content;
+    position: relative;
 }
 
 .image-home {
-    scale: 25%;
+    height: 400px;
+    width: 400px;
     border-radius: 999px;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #E3D025 0%, #8009AA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 @media screen and (max-width: 768px) {
@@ -107,6 +113,4 @@ a {
         flex-wrap: wrap;
         column-gap: 0.5rem;
     }
-
-    
 }
